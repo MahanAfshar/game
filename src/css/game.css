@@ -1,0 +1,72 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 0 0.5rem;
+  padding-top: 77px;
+  min-height: calc(100dvh - 77px);
+}
+
+.dynamicTextContainer {
+  overflow: hidden;
+  height: 37px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.dynamicText {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  top: 0;
+  animation: slide 30s steps(2) infinite;
+}
+
+.dynamicText::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 3px;
+  border-right: 2px solid var(--orangeOne);
+  animation: typing 15s steps(33) infinite;
+  background-color: var(--background);
+}
+
+#gameContainer {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 1 / 0.55 !important;
+  max-width: 700px;
+  overflow: hidden;
+}
+
+#gameContainer #game {
+  border-radius: 1rem;
+  aspect-ratio: unset;
+}
+
+@keyframes slide {
+  to {
+    top: -76px;
+  }
+}
+
+@keyframes typing {
+  30%,
+  60% {
+    right: 100%;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  main {
+    padding-top: 98px;
+    min-height: calc(100dvh - 98px);
+  }
+}

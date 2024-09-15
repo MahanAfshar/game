@@ -1,5 +1,5 @@
 import logo from "./../assets/images/logo.png";
-import { messengers } from "../constants/header.js";
+import { messengers } from "../constants/header";
 import "./../css/header.css";
 
 const Header = () => {

@@ -3,7 +3,7 @@ import "./../css/game.css";
 
 const Game = () => {
   const { RiveComponent } = useRive({
-    src: "./../assets/rive/game.riv",
+    src: "src/assets/rive/game.riv",
     stateMachines: "State Machine 1",
     autoplay: true,
     layout: new Layout({

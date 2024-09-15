@@ -1,10 +1,10 @@
 # Demo
 
-[![demo](./src/assets/gifs/demo.gif)](#)
+[![demo](./src/assets/gifs/demo.gif)](https://mahanafshar.github.io/AmiriTeam/)
 
 ## Amiri team
 
-### **[Review online](#)**
+### **[Review online](https://mahanafshar.github.io/AmiriTeam/)**
 
 ## Description
 
